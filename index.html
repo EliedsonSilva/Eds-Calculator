@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora EdsMotores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Rebobinamento de Motores</h1>
+        <div class="form-group">
+            <label for="diametro">Diâmetro do Motor (cm):</label>
+            <input type="number" id="diametro" step="any">
+        </div>
+        <div class="form-group">
+            <label for="pacote">Pacote do Motor (cm):</label>
+            <input type="number" id="pacote" step="any">
+        </div>
+        <div class="form-group">
+            <label for="frequencia">Frequência da Rede Elétrica (Hz):</label>
+            <input type="number" id="frequencia" step="any">
+        </div>
+        <div class="form-group">
+            <label for="tensao">Tensão da Rede Elétrica (V):</label>
+            <input type="number" id="tensao" step="any">
+        </div>
+        <div class="form-group">
+            <label for="corrente">Corrente Nominal do Motor (A):</label>
+            <input type="number" id="corrente" step="any">
+        </div>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpar()">Limpar</button>
+        
+        <div id="resultados" class="results"></div>
+        <button onclick="abrirTabelaAWG()">Abrir Tabela AWG</button>
+    </div>
+
+    <div id="tabelaAWG" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharTabelaAWG()">&times;</span>
+            <iframe id="awg-pdf" width="100%" height="500px"></iframe>
+            <button onclick="imprimirTabelaAWG()">Imprimir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
