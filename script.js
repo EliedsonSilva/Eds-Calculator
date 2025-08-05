@@ -50,3 +50,49 @@ function imprimirTabelaAWG() {
     const iframe = document.querySelector('#awg-pdf');
     iframe.contentWindow.print();
 }
+
+function copiarChavePix() {
+    // Seleciona o campo de texto
+    var chavePix = document.getElementById("chavePix");
+
+    // Copia o texto do campo
+    chavePix.select();
+    chavePix.setSelectionRange(0, 99999); // Para dispositivos móveis
+    document.execCommand("copy");
+
+    // Opcional: Avisa o usuário que a chave foi copiada
+    alert("Chave Pix copiada!");
+}
+
+// -------------------- NOVAS FUNÇÕES PARA DOACAO --------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const donateButtonHeader = document.getElementById('donate-button-header');
+    const donationSection = document.getElementById('donation-section');
+    const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
+    const donationInfo = document.getElementById('donation-info');
+
+    // 1. Botão do header que rola a página até a seção de doação
+    if (donateButtonHeader && donationSection) {
+        donateButtonHeader.addEventListener('click', () => {
+            donationSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // 2. Botão "Quero Doar" que exibe as informações
+    if (showDonationInfoBtn && donationInfo) {
+        showDonationInfoBtn.addEventListener('click', () => {
+            // Alterna a visibilidade da div de doação
+            donationInfo.classList.toggle('donation-info-visible');
+            donationInfo.classList.toggle('donation-info-hidden');
+
+            // Muda o texto do botão
+            if (showDonationInfoBtn.textContent === "Quero Doar") {
+                showDonationInfoBtn.textContent = "Ocultar";
+            } else {
+                showDonationInfoBtn.textContent = "Quero Doar";
+            }
+        });
+    }
+});
