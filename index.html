@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora EdsMotores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1> 🧮 Calculadora de Rebobinamento de Motores</h1>
@@ -34,7 +36,7 @@
         </div>
         <button onclick="calcular()">Calcular</button>
         <button onclick="limpar()">Limpar</button>
-        
+
         <div id="resultados" class="results"></div>
         <button onclick="abrirTabelaAWG()">Abrir Tabela AWG</button>
     </div>
@@ -47,12 +49,35 @@
         </div>
     </div>
 
+    <div id="donation-section" class="donation-section">
+        <div class="donation-content">
+            <h2>Apoie nosso trabalho! 🙏</h2>
+            <p>Se esta ferramenta foi útil para você, considere fazer uma doação.</p>
+            <button id="show-donation-info-btn">Quero Doar</button>
+
+            <div id="donation-info" class="donation-info-hidden">
+                <p><strong>🤝Obrigado pelo seu apoio!🤝</strong></p>
+                <P><strong>CHAVE PIX:👇QR-CODE ABAIXO👇</strong></P>
+                <div class="qrcode-container">
+                    <img src="img/QRdonation.jpg" alt="QR Code para Doação" class="qrcode-img">
+                </div>
+                <br>
+                <p>Nome: <strong>Eliedson Orcinio Da Silva</strong></p>
+                <p>Banco: <strong>PicPay</strong></p>
+                <br>
+                <br>
+                <p>🌟 Envie seu comprovante e mensagem ao email de contato abaixo, você fará parte do nosso grupo de apoiadores
+                    no <strong>Telegram</strong>! 🌟</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2025 Calculadora EdsMotores. Todos os direitos reservados.</p>
-        <p>📲 Contato: eliedson2022br@gmail.com</p>
+        <p>📲 Contato: edscalculatorbr@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
