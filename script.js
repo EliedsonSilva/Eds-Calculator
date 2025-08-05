@@ -19,11 +19,11 @@ function calcular() {
     const secaoRetaFio = corrente / 7;
 
     const resultados = `
-        <p>Passo Polar: ${passoPolar.toFixed(2)}</p>
-        <p>Fluxo Magnético Estimado: ${fluxoMagneticoEstimado.toFixed(2)}</p>
-        <p>Número de Espiras por Fase: ${numeroExpirasFase.toFixed(2)}</p>
-        <p>Número de Espiras por Polo: ${numeroExpirasPolo.toFixed(2)}</p>
-        <p>Seção Reta do Fio (aproximado): ${secaoRetaFio.toFixed(2)} mm2</p>
+        <p>Passo Polar: ✅ ${passoPolar.toFixed(2)}</p>
+        <p>Fluxo Magnético Estimado: ✅ ${fluxoMagneticoEstimado.toFixed(2)}</p>
+        <p>Número de Espiras por Fase: ✅ ${numeroExpirasFase.toFixed(2)}</p>
+        <p>Número de Espiras por Polo: ✅ ${numeroExpirasPolo.toFixed(2)}</p>
+        <p>Seção Reta do Fio: ✅ ${secaoRetaFio.toFixed(2)} mm2</p>
     `;
     document.getElementById('resultados').innerHTML = resultados;
 }
