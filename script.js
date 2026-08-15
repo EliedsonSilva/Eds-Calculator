@@ -66,33 +66,10 @@ function copiarChavePix() {
 
 // -------------------- NOVAS FUNÇÕES PARA DOACAO --------------------
 document.addEventListener('DOMContentLoaded', () => {
-    const donateButtonHeader = document.getElementById('donate-button-header');
-    const donationSection = document.getElementById('donation-section');
     const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
-    const donationInfo = document.getElementById('donation-info');
 
-    // 1. Botão do header que rola a página até a seção de doação
-    if (donateButtonHeader && donationSection) {
-        donateButtonHeader.addEventListener('click', () => {
-            donationSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    }
-
-    // 2. Botão "Quero Doar" que exibe as informações
-    if (showDonationInfoBtn && donationInfo) {
-        showDonationInfoBtn.addEventListener('click', () => {
-            // Alterna a visibilidade da div de doação
-            donationInfo.classList.toggle('donation-info-visible');
-            donationInfo.classList.toggle('donation-info-hidden');
-
-            // Muda o texto do botão
-            if (showDonationInfoBtn.textContent === "Quero Doar") {
-                showDonationInfoBtn.textContent = "Ocultar";
-            } else {
-                showDonationInfoBtn.textContent = "Quero Doar";
-            }
-        });
-    }
+    showDonationInfoBtn.addEventListner('click', () => {
+        const url = "https://www.asaas.com/c/v09u1859e12ipi9n";
+        window.open(url, '_blank');
+    });
 });
