@@ -65,11 +65,9 @@ function copiarChavePix() {
 }
 
 // -------------------- NOVAS FUNÇÕES PARA DOACAO --------------------
-document.addEventListener('DOMContentLoaded', () => {
-    const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
+const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
 
-    showDonationInfoBtn.addEventListner('click', () => {
-        const url = "https://www.asaas.com/c/v09u1859e12ipi9n";
-        window.open(url, '_blank');
-    });
+showDonationInfoBtn.addEventListner('click', () => {
+    const url = "https://www.asaas.com/c/v09u1859e12ipi9n";
+    window.open(url, '_blank');
 });
