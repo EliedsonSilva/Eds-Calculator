@@ -63,11 +63,3 @@ function copiarChavePix() {
     // Opcional: Avisa o usuário que a chave foi copiada
     alert("Chave Pix copiada!");
 }
-
-// -------------------- NOVAS FUNÇÕES PARA DOACAO --------------------
-const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
-
-showDonationInfoBtn.addEventListener('click', () => {
-    const url = "https://www.asaas.com/c/v09u1859e12ipi9n";
-    window.open(url, '_blank');
-});
