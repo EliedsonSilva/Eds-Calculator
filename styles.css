@@ -220,7 +220,7 @@ footer {
     margin-bottom: 10px;
 }
 
-#show-donation-info-btn {
+#donation-btn {
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
@@ -232,7 +232,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-#show-donation-info-btn:hover {
+#donation-btn:hover {
     background-color: #fb8c00;
 }
 
