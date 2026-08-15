@@ -63,3 +63,20 @@ function copiarChavePix() {
     // Opcional: Avisa o usuário que a chave foi copiada
     alert("Chave Pix copiada!");
 }
+// Donation Section
+document.addEventListener('DOMContentLoaded', () => {
+  const meuBotao = document.getElementById('donation-btn');
+
+  if (meuBotao) {
+    meuBotao.addEventListener('click', (event) => {
+      // Pega o valor do atributo data-link diretamente
+      const url = event.currentTarget.getAttribute('data-link');
+
+      if (url) {
+        window.open(url, '_blank');
+      } else {
+        console.error('Atributo data-link não foi encontrado no botão.');
+      }
+    });
+  }
+});
