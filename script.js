@@ -67,7 +67,7 @@ function copiarChavePix() {
 // -------------------- NOVAS FUNÇÕES PARA DOACAO --------------------
 const showDonationInfoBtn = document.getElementById('show-donation-info-btn');
 
-showDonationInfoBtn.addEventListner('click', () => {
+showDonationInfoBtn.addEventListener('click', () => {
     const url = "https://www.asaas.com/c/v09u1859e12ipi9n";
     window.open(url, '_blank');
 });
